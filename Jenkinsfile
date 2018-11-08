@@ -1,7 +1,7 @@
 pipeline {
 agent any
 tools {
-  maven 'localGo'
+  go 'localGo'
 }
 stages{
   stage('Build'){
