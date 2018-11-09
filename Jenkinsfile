@@ -3,6 +3,9 @@ agent any
 tools {
   go 'localGo'
 }
+environment {
+        GOPATH = "${pwd}"
+    }
 stages{
   stage('Build'){
   steps { 
@@ -14,9 +17,6 @@ post {
            archiveArtifacts artifacts :'**'
            }
        }
-    }
-environment {
-        GOPATH = "${pwd}"
     }
 	stage('Deploy'){
 	  steps{
