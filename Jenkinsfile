@@ -10,7 +10,7 @@ environment {
 stages{
   stage('Build'){
   steps { 
-       sh 'go build hello-world.go'
+        sh 'go version'
       }
 post {
   success { 
