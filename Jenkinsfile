@@ -3,9 +3,9 @@ agent any
 tools {
   go 'localGo'
 }
- environment {
-export GOROOT=$(pwd)/go
-export GOPATH=$(pwd)
+environment {
+export GOROOT="$(pwd)/go"
+export GOPATH="$(pwd)"
     }
 stages{
   stage('Build'){
