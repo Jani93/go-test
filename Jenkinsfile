@@ -5,6 +5,7 @@ tools {
 }
 environment {
         GOPATH = "${pwd}"
+        GOROOT = "/usr/bin/go"
     }
 stages{
   stage('Build'){
