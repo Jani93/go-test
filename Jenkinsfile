@@ -15,6 +15,9 @@ post {
            }
        }
     }
+environment {
+        GOPATH = "${pwd}"
+    }
 	stage('Deploy'){
 	  steps{
 	  build job:'deploy to staging'
